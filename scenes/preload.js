@@ -266,13 +266,6 @@ class preloadGame extends Phaser.Scene {
       margin: 2
     });
 
-
-    this.load.spritesheet("cards_robot", "assets/sprites/cards_robot.png", {
-      frameWidth: 136,
-      frameHeight: 191,
-      spacing: 2,
-      margin: 2
-    });
     this.load.spritesheet("cards_nyc", "assets/sprites/cards_nyc.jpg", {
       frameWidth: 185,
       frameHeight: 257,
@@ -347,12 +340,7 @@ this.load.spritesheet("cards_largeindex", "assets/sprites/cards_largeindex.png",
     spacing: 2,
     margin: 2
   });
-  this.load.spritesheet("cards_dogs", "assets/sprites/cards_dogs.png", {
-    frameWidth: 264,
-    frameHeight: 386,
-    spacing: 2,
-    margin: 2
-  });
+  
 
 
     this.load.spritesheet("icons", "assets/sprites/icons.png", {

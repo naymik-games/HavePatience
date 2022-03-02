@@ -60,7 +60,7 @@ let deckPacks = [
 {name: 'twelve', start: 33},
 {name: 'thirteen', start: 36},
 {name: 'thirteen', start: 39},
-{name: 'fourteen', start: 42},
+
 
 ]
 let decks = [
@@ -106,24 +106,21 @@ let decks = [
 { key: 'cards_folk', name: 'Folk', baseScale: 1.3, cardWidth: 124,cardHeight: 172 },
 //30
 { key: 'cards_lotr', name: 'LOTR', baseScale: .9, cardWidth: 178,cardHeight: 250 },
-{ key: 'cards_robot', name: 'Robot', baseScale: .55, cardWidth: 273,cardHeight: 383 },
 { key: 'cards_nyc', name: 'NYC', baseScale: .85, cardWidth: 185,cardHeight: 257 },
-//33
 { key: 'cards_double', name: 'Double', baseScale: .82, cardWidth: 195,cardHeight: 273 },
+//33
 { key: 'cards_headless', name: 'Headless', baseScale: .80, cardWidth: 200,cardHeight: 300 },
 { key: 'cards_mobile', name: 'Mobile', baseScale: 1.1, cardWidth: 145,cardHeight: 192 },
-//36
 { key: 'cards_cartoon', name: 'Cartoon', baseScale: 2.2, cardWidth: 76,cardHeight: 106 },
+//36
 { key: 'cards_simple', name: 'Simple', baseScale: .8, cardWidth: 206,cardHeight: 292 },
 { key: 'cards_minipixel', name: 'Mini Pixel', baseScale: .9, cardWidth: 178,cardHeight: 250 },
-//39
 { key: 'cards_civ', name: 'Civ', baseScale: .7, cardWidth: 225,cardHeight: 315 },
+//39
 { key: 'cards_pantheon', name: 'Pantheon', baseScale: .9, cardWidth: 215,cardHeight: 301 },
 { key: 'cards_drawing', name: 'Drawing', baseScale: .9, cardWidth: 165,cardHeight: 255 },
-//42
 { key: 'cards_largeindex', name: 'Large Index', baseScale: .9, cardWidth: 178,cardHeight: 250 },
-{ key: 'cards_dogs', name: 'Dogs', baseScale: .6, cardWidth: 264,cardHeight: 386 },
-{ key: 'cards_dogs', name: 'Dogs 2', baseScale: .6, cardWidth: 264,cardHeight: 386 }
+
 ]
 
 
