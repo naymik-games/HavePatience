@@ -142,7 +142,9 @@ this.cardHeight = decks[gameOptions.deckNum].cardHeight * this.scale;
 						  if(temp > -1){
 							  this.moveToEmptyStack(card, temp);
 							  return
-						  }
+						  } else {
+                this.setSelection(card, true);
+              }
 					  } else {
 					   //otherwise, select the card
 						  this.setSelection(card, true);
