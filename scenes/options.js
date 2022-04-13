@@ -19,7 +19,7 @@ class options extends Phaser.Scene {
       var bgsample = this.add.image(50 + b * 100, 275, 'blank').setOrigin(0, .5).setTint(gameOptions.bgColors[b]).setInteractive();
       bgsample.displayWidth = 75;
       bgsample.displayHeight = 75;
-      bgsample.num = b;
+      bgsample.num = b + 1;
     }
 
 
@@ -64,7 +64,7 @@ class options extends Phaser.Scene {
     //this.input.on('pointerup', this.up,this);
 
     var backIcon = this.add.image(450, 1500, 'icons', 5).setInteractive().setScale(1.5).setTint(0xc76210);
-    backIcon.on('pointerdown', function() {
+    backIcon.on('pointerdown', function () {
       this.scene.start('startGame');
     }, this)
     console.log(decks.length);
@@ -72,12 +72,12 @@ class options extends Phaser.Scene {
     this.showDecks('next', gameSettings.pack);
 
     this.preIcon = this.add.image(50, 600, 'icons', 6).setScale(1.2).setTint(0xffffff).setInteractive();
-    this.preIcon.on('pointerdown', function() {
+    this.preIcon.on('pointerdown', function () {
       this.pre();
     }, this)
 
     this.nextIcon = this.add.image(850, 600, 'icons', 7).setInteractive().setScale(1.2).setTint(0xffffff);
-    this.nextIcon.on('pointerdown', function() {
+    this.nextIcon.on('pointerdown', function () {
       this.next();
     }, this)
 
@@ -193,7 +193,7 @@ class options extends Phaser.Scene {
   changeBacks() {
     var back = 52;
     for (var i = 0; i < this.cardBacks.length; i++) {
-      this.cardBacks[i].setTexture(gameOptions.deck, back);
+      this.cardBacks[i].setTexture(gameOptions.deck, back).setScale(decks[gameSettings.deckNum].baseScale);
       back++
     }
   }
@@ -211,9 +211,9 @@ class options extends Phaser.Scene {
       this.changeBacks();
       this.saveSettings();
     } else if (obj.num) {
-      gameOptions.bgColor = obj.num;
-      gameSettings.color = obj.num;
-      this.bgsample.setTint(gameOptions.bgColors[obj.num]);
+      gameOptions.bgColor = obj.num - 1;
+      gameSettings.color = obj.num - 1;
+      this.bgsample.setTint(gameOptions.bgColors[obj.num - 1]);
       this.saveSettings();
     } else if (obj.back) {
       gameOptions.deckBack = obj.back;
